@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
 <title>Space Missions</title>
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/main.js"></script>
@@ -10,12 +9,13 @@ integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwr
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
 <header id=header>
 <!-- Nav tabs -->
-	<div id="logo"><a href="#homePage" role="tab" data-toggle="tab"><img src="images/nasa_logo.jpg"></a><h1>Space Missions</h1></div>
+	<div id="logo"><a href="#home" role="tab" data-toggle="tab"><img src="images/nasa_logo.jpg"></a><h1>Space Missions</h1></div>
     <ul id="navbar" class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#home" role="tab" data-toggle="tab"><i class="bi bi-house"></i></a></li>
         <li><a href="#missions" role="tab" data-toggle="tab"><i class="bi bi-stars"></i>MISSIONS</a></li>
@@ -25,18 +25,35 @@ integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwr
      </ul>
 </header>
 <section>
-<!-- home page -->
-<div class="tab-pane active">
-      <div class="tab-pane active" id="home">
-            <!-- <h1>Home Page</h1> -->
-            <div class="container" id="grids">
-				<div class="row row-cols-auto" id="missionsGrid">
-				    <!-- GRIDS -->
-				</div>
+<!-- Home Page -->
+<div class="tab-pane active" id="homepageDiv">
+      <div class="container">
+			<div class="row mt-4" id="missionsGrid">
+				<!-- GRIDS -->
 			</div>
       </div>
 </div>
+<!-- Missions Page -->
+<div class="tab-pane active" id="missionsDiv">
+ 	<div class="container">
+		<div class="row row-cols-auto" id="missionDescriptionDiv">
+		<!-- GRIDS -->
+		</div>
+	</div> 
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span id="span" class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <!-- Modal Caption (Image Text) -->
+  
+  <div id="caption"></div>
+</div>
+
 </section>
-<footer>&copy; AIT HDip 2021 | Space Missions | <a href=#header>Back to the top</a></footer>
+<footer>&copy; AIT HDip 2021 Space Missions | <a href=#header>Back to the top</a></footer>
 </body>
 </html>
