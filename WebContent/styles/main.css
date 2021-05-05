@@ -60,19 +60,6 @@ i:hover{
 	color: rgb(255, 61, 61);
 }
 
-#formGoogleSearch{
-	flex-direction: row;
-	display: flex;
-	margin-bottom: 5px;
-	justify-content: center;
-	height: 10%;
-}
-
-#googleInput{
-	width:50%;
-	height: 51px;
-}
-
 ul {
 	flex-direction: row;
 	justify-content: center;
@@ -110,10 +97,33 @@ input{
 	margin:1px;
 }
 
+.container .col {
+	background-color: rgb(242,242,242);
+	padding: 10px;
+	margin:5px;
+	float: center;
+	display: flex;
+	font-family: 'Play', sans-serif;
+}
+
+.container h4{
+	margin: 5px;
+}
+.container p {
+	text-align: justify;
+	margin: auto;
+}
+
+.col img{
+	margin:20px;
+	height: 256px;
+	width: 256px;
+}
+
 .dados {
     bottom: 5px;
     right: 0;
-    color:rgb(13,26,44);
+    color:rgb(255, 61, 61);
     margin-right: 2px;
 }
 
@@ -165,7 +175,7 @@ input{
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: rgb(255, 61, 61);
   padding: 10px 0;
   height: 150px;
 }
@@ -204,6 +214,10 @@ input{
   .modal-content {
     width: 100%;
   }
+}
+
+footer a{
+	font-size: 15px;
 }
 
 footer{
